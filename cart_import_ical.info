@@ -1,0 +1,12 @@
+name = Import ical
+core = 7.x
+package = CART
+version = 7.x-1.0-alpha1
+project = cart_import_ical
+dependencies[] = ctools
+dependencies[] = date_ical
+dependencies[] = feeds
+features[ctools][] = feeds:feeds_importer_default:1
+features[features_api][] = api:2
+features[feeds_importer][] = cart_feeds_ical
+project path = sites/all/modules/features
